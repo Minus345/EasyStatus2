@@ -1,10 +1,10 @@
 import os
+import sqlite3
 
 import socketio
 from flask import Flask, render_template
 from flask import blueprints
-from flask_socketio import SocketIO
-from flask import jsonify
+from flask_socketio import SocketIO, emit
 
 import db
 
@@ -35,13 +35,36 @@ def init():
 
 
 @socketio.on('checkbox')
-def handle_message(data):
+def update_checkbox(data):
     print('received message: ' + str(data))
+    # translate bool
+    bool_value = 0
+    if data['value']:
+        bool_value = 1
+
+    #prevent sql-injection for collum
+    collum_Names = ["official", "printed", "certificate"]
+    if data['type'] not in collum_Names:
+        raise ValueError("Invalid collum")
+
+    con = db.get_db()
+    try:
+        with con:
+            cur = con.cursor()
+            sql = f"UPDATE event SET {data['type']} = ? WHERE number = ?" # ? operator is not allowed in keys
+            cur.execute(sql, (bool_value, data['number']))
+    except sqlite3.IntegrityError as e:
+        print(e)
+        db.close_db()
+        # TODO: Send Error to user
+        return
+    emit('update', data, broadcast=True)
+    db.close_db()
 
 
 @socketio.on('connect')
 def init_client():
-    socketio.emit('init', query_db("SELECT * FROM event"))
+    emit('init', query_db("SELECT * FROM event"))
 
 
 def query_db(query):
