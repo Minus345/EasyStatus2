@@ -1,5 +1,14 @@
 const socket = io();
-//TODO: add online icon
+// online icon:
+socket.on("connect", () => {
+    document.querySelector("#socket-status circle").setAttribute("fill", "green");
+});
+
+socket.on("disconnect", () => {
+    document.querySelector("#socket-status circle").setAttribute("fill", "red");
+});
+
+//init
 socket.on('init', function (payload) {
     const table = document.getElementById('table');
     payload.forEach(event => {
