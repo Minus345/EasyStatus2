@@ -10,7 +10,8 @@ socket.on("disconnect", () => {
 
 //init
 socket.on('init', function (payload) {
-    const table = document.getElementById('table');
+    console.log(payload);
+    const table = document.getElementById('table').getElementsByTagName('tbody')[0];
     payload.forEach(event => {
         const row = table.insertRow()
         const number = row.insertCell()
@@ -19,7 +20,6 @@ socket.on('init', function (payload) {
         name.textContent = event.name
 
         valueNames = ["official", "printed", "certificate"]
-        const checkboxes = []
         for (const key in event) {
             if (!valueNames.includes(key)) continue
             const checkbox = document.createElement('input')
@@ -31,7 +31,6 @@ socket.on('init', function (payload) {
             }
             const cell = row.insertCell()
             cell.appendChild(checkbox)
-            checkboxes.push(cell)
         }
     })
 })

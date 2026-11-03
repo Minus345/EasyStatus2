@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="76796d3e-453b-4927-a666-c8249b532285" name="Changes" comment="add synchronization and db">
-      <change afterPath="$PROJECT_DIR$/static/status.css" afterDir="false" />
+    <list default="true" id="76796d3e-453b-4927-a666-c8249b532285" name="Changes" comment="add online icon">
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/status.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/status.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/status.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/status.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/status.html" afterDir="false" />
     </list>
@@ -11,6 +15,10 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="20" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -20,49 +28,134 @@
       </list>
     </option>
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Minus345"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Minus345&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Minus345/EasyStatus2.git",
-    "accountId": "7c9d90c5-13a1-4936-9c7a-e865c16a0a85"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Minus345/EasyStatus2.git&quot;,
+    &quot;accountId&quot;: &quot;7c9d90c5-13a1-4936-9c7a-e865c16a0a85&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6,
-  "fromUser": false
-}]]></component>
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0046087897006709E-19" />
+      <entry key="MS500" value="1.5866424764235154E-4" />
+      <entry key="S2" value="0.12528946720238265" />
+      <entry key="S5" value="0.5942242169997614" />
+      <entry key="S10" value="1.3232870714251685" />
+      <entry key="S30" value="14.929718131266606" />
+      <entry key="S60" value="39.48986503194928" />
+      <entry key="M2" value="74.79499061120364" />
+      <entry key="M5" value="157.95249381039827" />
+      <entry key="M10" value="248.17644285105175" />
+      <entry key="M15" value="305.13123580126774" />
+      <entry key="M30" value="400.46300268620814" />
+      <entry key="H1" value="479.85698740435913" />
+      <entry key="H2" value="534.4407698484418" />
+      <entry key="H4" value="567.0305499372757" />
+      <entry key="D1" value="597.5023027931514" />
+      <entry key="W1" value="603.0630700555505" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000036577712" />
+      <entry key="S60" value="1.0000726903297177" />
+      <entry key="M2" value="1.0135604871626638" />
+      <entry key="M5" value="1.6144521752520467" />
+      <entry key="M10" value="4.59337728696838" />
+      <entry key="M15" value="8.2974159685783" />
+      <entry key="M30" value="17.06350241548942" />
+      <entry key="H1" value="25.694754289775414" />
+      <entry key="H2" value="31.924662378821875" />
+      <entry key="H4" value="35.697170423491144" />
+      <entry key="D1" value="39.24264244963219" />
+      <entry key="W1" value="39.8907733191648" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="4.9775118793748505E-8" />
+      <entry key="MS500" value="0.03468147833692218" />
+      <entry key="S2" value="0.520353294293852" />
+      <entry key="S5" value="1.1843108893776744" />
+      <entry key="S10" value="2.0214525946436592" />
+      <entry key="S30" value="15.784306175963247" />
+      <entry key="S60" value="40.4084262736851" />
+      <entry key="M2" value="75.76448784886395" />
+      <entry key="M5" value="159.54155460925304" />
+      <entry key="M10" value="252.7397202972258" />
+      <entry key="M15" value="313.3936244962919" />
+      <entry key="M30" value="417.4902386526122" />
+      <entry key="H1" value="505.5238405897059" />
+      <entry key="H2" value="566.3478316704394" />
+      <entry key="H4" value="602.7177937452642" />
+      <entry key="D1" value="636.7431122145866" />
+      <entry key="W1" value="642.9535768191392" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3Hzqay36sgkwKkxeGw0CdQ38hz7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Flask server.EasyStatus2.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flask server.EasyStatus2.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.status.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.test.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/max/PycharmProjects/EasyStatus2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMThirdPartyAiProvidersConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -92,8 +185,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-PY-261.22158.340" />
-        <option value="bundled-python-sdk-b63d5a1f7c97-b61e75351b1f-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.22158.340" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PY-262.11879.98" />
+        <option value="bundled-python-sdk-ebb3072d7bdf-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.11879.98" />
       </set>
     </attachedChunks>
   </component>
@@ -104,7 +197,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1786881311745</updated>
-      <workItem from="1786881312847" duration="24882000" />
+      <workItem from="1786881312847" duration="25132000" />
+      <workItem from="1791992240101" duration="2033000" />
+      <workItem from="1792483615935" duration="32000" />
+      <workItem from="1792483779089" duration="849000" />
+      <workItem from="1793123309167" duration="2101000" />
+      <workItem from="1793721765398" duration="1813000" />
+      <workItem from="1793723664218" duration="338000" />
+      <workItem from="1793724069195" duration="39000" />
+      <workItem from="1793724117171" duration="3740000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -122,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786912235106</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add online icon">
+      <option name="closed" value="true" />
+      <created>1786913482469</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1786913482469</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,9 +251,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="add synchronization and db" />
-    <option name="LAST_COMMIT_MESSAGE" value="add synchronization and db" />
+    <MESSAGE value="add online icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="add online icon" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/EasyStatus2$EasyStatus2.coverage" NAME="EasyStatus2 Coverage Results" MODIFIED="1786913119507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EasyStatus2$EasyStatus2.coverage" NAME="EasyStatus2 Coverage Results" MODIFIED="1793729058617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
         integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
         crossorigin="anonymous"></script>
@@ -8,17 +7,21 @@
 <script src="/static/status.js"></script>
 <head>
     <meta charset="UTF-8">
-    <title>{{ title }}</title>
+    <title>Easy Status</title>
+    <link rel="stylesheet" href="/static/status.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<header> Easy Status</header>
-<div id="online">
-    Connected:
-    <svg id="socket-status" width="18" height="18" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="10" fill="red"></circle>
-    </svg>
-</div>
 <body>
-<div id="status">
+<header>
+    <h1>Easy Status</h1>
+    <div class="online-status">
+        Connected:
+        <svg id="socket-status" width="18" height="18" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" fill="red"></circle>
+        </svg>
+    </div>
+</header>
+<div class="status-table">
     <table id="table">
         <thead>
         <tr>
@@ -29,7 +32,8 @@
             <th>Urkunden</th>
         </tr>
         </thead>
-        <button id="add-wk">Wettkampf hinzufügen</button>
+        <tbody>
+        </tbody>
     </table>
     <button id="add-wk">Wettkampf hinzufügen</button>
 </div>
