@@ -29,13 +29,26 @@
             <th>Name</th>
             <th>Offiziell</th>
             <th>Aushang</th>
-            <th>Urkunden</th>
         </tr>
         </thead>
         <tbody>
         </tbody>
     </table>
-    <button id="add-wk">Wettkampf hinzufügen</button>
+    <button id="add-wk" onclick="addWk()">Wettkampf hinzufügen</button>
 </div>
+
+<dialog id="add-wk-dialog" popover closedby="any">
+    <p>Wettkampf hinzufügen: </p>
+    <label for="wk-number">Nummer: </label>
+    <input type="number" name="wk-number" id="wk-number" placeholder="WK-Nummer" tabindex="1">
+    <br>
+    <label for="wk-name">Name: </label>
+    <input type="text" name="wk-name" id="wk-name" placeholder="Name" tabindex="2">
+    <div id = control-buttons>
+        <button commandfor="add-wk-dialog" command="close" type="button" tabindex="4">Close</button>
+        <button onclick="sendWK()" tabindex="3">Submit</button>
+    </div>
+</dialog>
+
 </body>
 </html>

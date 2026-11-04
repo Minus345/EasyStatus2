@@ -21,7 +21,7 @@ socket.on('init', function (payload) {
         number.textContent = event.number
         name.textContent = event.name
 
-        valueNames = ["official", "printed", "certificate"]
+        valueNames = ["official", "printed"]
         for (const key in event) {
             if (!valueNames.includes(key)) continue
             const checkbox = document.createElement('input')
@@ -29,7 +29,12 @@ socket.on('init', function (payload) {
             checkbox.checked = event[key] === 1
             checkbox.id = event.number + " " + key
             checkbox.onchange = function () {
-                socket.emit('checkbox', {"number": event.number, "type": key, "value": checkbox.checked, "version": versions[event.number]});
+                socket.emit('checkbox', {
+                    "number": event.number,
+                    "type": key,
+                    "value": checkbox.checked,
+                    "version": versions[event.number]
+                });
             }
             const cell = row.insertCell()
             cell.appendChild(checkbox)
@@ -50,3 +55,12 @@ socket.on('error', function (payload) {
     console.log(payload.message)
 })
 
+function addWk() {
+    document.getElementById("add-wk-dialog").showModal();
+}
+
+function sendWK() {
+    const dialog = document.getElementById("add-wk-dialog");
+    console.log(document.getElementById("wk-number").value);
+    dialog.close();
+}

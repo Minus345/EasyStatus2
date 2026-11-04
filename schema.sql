@@ -5,6 +5,5 @@ CREATE TABLE event(
     name TEXT,
     official INTEGER not null,
     printed INTEGER not null,
-    certificate INTEGER not null,
     version INTEGER DEFAULT 1 not null
 )
