@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76796d3e-453b-4927-a666-c8249b532285" name="Changes" comment="improve synchronization with versioning">
+    <list default="true" id="76796d3e-453b-4927-a666-c8249b532285" name="Changes" comment="remove unused certificate column, add dialog for adding wettkampf entries in frontend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/status.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/status.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/status.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/status.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/status.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,61 +58,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000003292722" />
-      <entry key="MS500" value="1.0126952267922107" />
-      <entry key="S2" value="1.380202343212638" />
-      <entry key="S5" value="1.9792342739353987" />
-      <entry key="S10" value="2.554276673819406" />
-      <entry key="S30" value="3.372094199219232" />
-      <entry key="S60" value="4.1354666319260565" />
-      <entry key="M2" value="6.553570787474644" />
-      <entry key="M5" value="16.105108864422274" />
-      <entry key="M10" value="28.214138508369924" />
-      <entry key="M15" value="37.76426481450382" />
-      <entry key="M30" value="74.81751313434826" />
-      <entry key="H1" value="184.90337452364193" />
-      <entry key="H2" value="375.0480855151025" />
-      <entry key="H4" value="568.4721767804858" />
-      <entry key="D1" value="826.3787525691118" />
-      <entry key="W1" value="883.117215330875" />
+      <entry key="MS100" value="1.0005306322570928" />
+      <entry key="MS500" value="1.2217726778298177" />
+      <entry key="S2" value="1.8344736770348955" />
+      <entry key="S5" value="2.3837888717761704" />
+      <entry key="S10" value="2.9842816284921128" />
+      <entry key="S30" value="4.3011015332314155" />
+      <entry key="S60" value="5.212744437841412" />
+      <entry key="M2" value="7.751136280973224" />
+      <entry key="M5" value="18.53495786372955" />
+      <entry key="M10" value="34.40054296451367" />
+      <entry key="M15" value="46.90593543714272" />
+      <entry key="M30" value="85.64650108820506" />
+      <entry key="H1" value="192.13388051117886" />
+      <entry key="H2" value="382.2537245944125" />
+      <entry key="H4" value="581.9012421773357" />
+      <entry key="D1" value="854.6155092547723" />
+      <entry key="W1" value="915.3892553414785" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.9267123307144004E-10" />
-      <entry key="MS500" value="0.012399536285062202" />
-      <entry key="S2" value="0.3779693441025928" />
-      <entry key="S5" value="0.976948942579325" />
-      <entry key="S10" value="1.5535582171609157" />
-      <entry key="S30" value="2.5040900366441625" />
-      <entry key="S60" value="3.295128093121651" />
-      <entry key="M2" value="4.689419729684405" />
-      <entry key="M5" value="9.561836392602263" />
-      <entry key="M10" value="16.37605389358695" />
-      <entry key="M15" value="21.339549959073416" />
-      <entry key="M30" value="33.07863939584594" />
-      <entry key="H1" value="52.04542782735077" />
-      <entry key="H2" value="76.3329180557769" />
-      <entry key="H4" value="98.32070034034632" />
-      <entry key="D1" value="126.01849939851652" />
-      <entry key="W1" value="131.96774329071664" />
+      <entry key="MS100" value="4.2610501868930474E-11" />
+      <entry key="MS500" value="0.008431478527876173" />
+      <entry key="S2" value="0.3128520515551169" />
+      <entry key="S5" value="0.8523752090141435" />
+      <entry key="S10" value="1.7392846529140897" />
+      <entry key="S30" value="4.00512122654105" />
+      <entry key="S60" value="5.430511456373074" />
+      <entry key="M2" value="7.480880599571256" />
+      <entry key="M5" value="13.127895913186386" />
+      <entry key="M10" value="21.17102380338461" />
+      <entry key="M15" value="27.485397574790035" />
+      <entry key="M30" value="41.64966016505993" />
+      <entry key="H1" value="62.62662136304934" />
+      <entry key="H2" value="88.90914625208887" />
+      <entry key="H4" value="112.83024154035259" />
+      <entry key="D1" value="143.27240017618843" />
+      <entry key="W1" value="149.85609629301626" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9460576470393246" />
-      <entry key="MS500" value="1.0037453210525096" />
-      <entry key="S2" value="1.6275090018332727" />
-      <entry key="S5" value="2.818066719058318" />
-      <entry key="S10" value="3.9983192898466102" />
-      <entry key="S30" value="5.81139634865828" />
-      <entry key="S60" value="7.37942561643069" />
-      <entry key="M2" value="11.196170753641706" />
-      <entry key="M5" value="25.615319367992274" />
-      <entry key="M10" value="44.54038362747757" />
-      <entry key="M15" value="59.05774066363809" />
-      <entry key="M30" value="107.85597213438575" />
-      <entry key="H1" value="236.9140437687704" />
-      <entry key="H2" value="451.3537212334066" />
-      <entry key="H4" value="666.7745427297597" />
-      <entry key="D1" value="952.3931753917171" />
-      <entry key="W1" value="1015.0843443299951" />
+      <entry key="MS100" value="0.005664126635959911" />
+      <entry key="MS500" value="0.4762026993180339" />
+      <entry key="S2" value="1.7169879369556282" />
+      <entry key="S5" value="2.9279875750409716" />
+      <entry key="S10" value="4.431606009525074" />
+      <entry key="S30" value="8.080227615754614" />
+      <entry key="S60" value="10.489541845639907" />
+      <entry key="M2" value="15.126890736881158" />
+      <entry key="M5" value="31.58910747086072" />
+      <entry key="M10" value="55.510001225742066" />
+      <entry key="M15" value="74.33596471091803" />
+      <entry key="M30" value="127.24992610529009" />
+      <entry key="H1" value="254.72198595859064" />
+      <entry key="H2" value="471.133197291496" />
+      <entry key="H4" value="694.7116453392313" />
+      <entry key="D1" value="997.8834996638396" />
+      <entry key="W1" value="1065.244686867187" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -208,7 +206,8 @@
       <workItem from="1793724069195" duration="39000" />
       <workItem from="1793724117171" duration="3740000" />
       <workItem from="1793804072094" duration="35000" />
-      <workItem from="1793804124454" duration="9006000" />
+      <workItem from="1793804124454" duration="9758000" />
+      <workItem from="1793884608107" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -250,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793810056169</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="remove unused certificate column, add dialog for adding wettkampf entries in frontend">
+      <option name="closed" value="true" />
+      <created>1793814776642</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1793814776642</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,9 +280,10 @@
     <MESSAGE value="add online icon" />
     <MESSAGE value="new frontend style" />
     <MESSAGE value="improve synchronization with versioning" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve synchronization with versioning" />
+    <MESSAGE value="remove unused certificate column, add dialog for adding wettkampf entries in frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove unused certificate column, add dialog for adding wettkampf entries in frontend" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/EasyStatus2$EasyStatus2.coverage" NAME="EasyStatus2 Coverage Results" MODIFIED="1793814546222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EasyStatus2$EasyStatus2.coverage" NAME="EasyStatus2 Coverage Results" MODIFIED="1793885206942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

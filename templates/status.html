@@ -34,7 +34,10 @@
         <tbody>
         </tbody>
     </table>
-    <button id="add-wk" onclick="addWk()">Wettkampf hinzufügen</button>
+    <div class="control-buttons-box">
+        <button id="add-wk" class="control-buttons" onclick="addWk()">Wettkampf hinzufügen</button>
+        <button id="rm-wk" class="control-buttons" onclick="rmWk()">Wettkampf entfernen</button>
+    </div>
 </div>
 
 <dialog id="add-wk-dialog" popover closedby="any">
@@ -44,11 +47,22 @@
     <br>
     <label for="wk-name">Name: </label>
     <input type="text" name="wk-name" id="wk-name" placeholder="Name" tabindex="2">
-    <div id = control-buttons>
+    <div class="control-buttons-in-dialog">
         <button commandfor="add-wk-dialog" command="close" type="button" tabindex="4">Close</button>
         <button onclick="sendWK()" tabindex="3">Submit</button>
     </div>
 </dialog>
+
+<dialog id="rm-wk-dialog" popover closedby="any">
+    <p>Wettkampf entfernen: </p>
+    <label for="wk-number">Nummer: </label>
+    <input type="number" name="wk-number" id="wk-number" placeholder="WK-Nummer" tabindex="1">
+    <div class="control-buttons-in-dialog">
+        <button commandfor="rm-wk-dialog" command="close" type="button" tabindex="4">Close</button>
+        <button onclick="sendWK()" tabindex="3">Submit</button>
+    </div>
+</dialog>
+
 
 </body>
 </html>
