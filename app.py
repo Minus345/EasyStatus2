@@ -1,9 +1,11 @@
 import os
 import sqlite3
+from typing import Any
 
 import socketio
 from flask import Flask, render_template
 from flask import blueprints
+from flask import current_app as app
 from flask_socketio import SocketIO, emit
 
 import db
@@ -36,7 +38,6 @@ def init():
 
 @socketio.on('checkbox')
 def update_checkbox(data):
-    print('received message: ' + str(data))
     # translate bool
     bool_value = 0
     if data['value']:
@@ -57,14 +58,15 @@ def update_checkbox(data):
             if result_transaction.rowcount == 0:
                 # Failure:
                 db.close_db()
-                emit('error',{"message": "Optimistic Locking Error: Your Browser is probably outdated. It will be refreshed"})
+                emit('error', {
+                    "message": "Optimistic Locking Error: Your Browser is probably outdated. It will be refreshed"})
                 emit_init()
-                raise ValueError("Optimistic Locking Error")
+                app.logger.error("Optimistic Locking Error: Your Browser is probably outdated.")
     except sqlite3.Error as e:
         db.close_db()
         emit('error', {"message": "Database Error: Your browser will be refreshed. Then try again"})
         emit_init()
-        raise e
+        app.logger.exception(e)
 
     # Success:
     data['version'] = data['version'] + 1
@@ -76,15 +78,42 @@ def update_checkbox(data):
 def init_client():
     emit_init()
 
-def emit_init():
-    emit('init', query_db("SELECT * FROM event"))
 
-def query_db(query):
+@socketio.on('addWK')
+def addWK(data):
+    execute_query_with_emit_init("INSERT INTO event (number, name) VALUES (?,?)", (data['number'], data['name']))
+
+
+@socketio.on('rmWK')
+def rmWK(data):
+    execute_query_with_emit_init("DELETE FROM event WHERE number = ?", (data['number'],))
+
+
+def emit_init(broadcast: bool = False):
+    emit('init', query_db("SELECT * FROM event"), broadcast=broadcast)
+
+
+def query_db(query: str) -> list[dict[Any, Any]]:
     # source: https://stackoverflow.com/questions/3286525/return-sql-table-as-json-in-python
     cur = db.get_db().cursor()
     cur.execute(query)
     r = [dict((cur.description[i][0], value) for i, value in enumerate(row)) for row in cur.fetchall()]
     return r
+
+
+def execute_query_with_emit_init(query: str, var):
+    con = db.get_db()
+    try:
+        with con:
+            cur = con.cursor()
+            cur.execute(query, var)
+            con.commit()
+    except sqlite3.Error as e:
+        db.close_db()
+        emit('error', {"message": "Database Error: " + str(e)})
+        app.logger.exception(e)
+    emit_init(broadcast=True)
+    db.close_db()
 
 
 if __name__ == '__main__':

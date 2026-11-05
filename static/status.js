@@ -59,8 +59,37 @@ function addWk() {
     document.getElementById("add-wk-dialog").showModal();
 }
 
-function sendWK() {
+function sendAddWK() {
     const dialog = document.getElementById("add-wk-dialog");
-    console.log(document.getElementById("wk-number").value);
+    const wkNumber = document.getElementById("wk-number-add").value;
+    if (wkNumber === "") {
+        alert("Bitte mindesten eine WK-Nummer angeben");
+        return;
+    }
+    socket.emit('addWK', {
+        "number": wkNumber,
+        "name": document.getElementById("wk-name-add").value,
+    });
+    dialog.close();
+}
+
+function rmWk() {
+    document.getElementById("rm-wk-dialog").showModal();
+}
+
+function sendRmWK() {
+    const dialog = document.getElementById("rm-wk-dialog");
+    const wkNumber = document.getElementById("wk-number-rm").value;
+    if (wkNumber === "") {
+        alert("Bitte eine WK-Nummer angeben");
+        return;
+    }
+    let result = confirm("Soll der WK: " + wkNumber + " wirklich gelöscht werden?")
+    if (!result) {
+        return;
+    }
+    socket.emit('rmWK', {
+        "number": wkNumber
+    });
     dialog.close();
 }

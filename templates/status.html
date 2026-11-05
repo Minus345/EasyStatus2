@@ -43,23 +43,23 @@
 <dialog id="add-wk-dialog" popover closedby="any">
     <p>Wettkampf hinzufügen: </p>
     <label for="wk-number">Nummer: </label>
-    <input type="number" name="wk-number" id="wk-number" placeholder="WK-Nummer" tabindex="1">
+    <input type="number" name="wk-number" id="wk-number-add" placeholder="WK-Nummer" tabindex="1">
     <br>
     <label for="wk-name">Name: </label>
-    <input type="text" name="wk-name" id="wk-name" placeholder="Name" tabindex="2">
+    <input type="text" name="wk-name" id="wk-name-add" placeholder="Name" tabindex="2">
     <div class="control-buttons-in-dialog">
         <button commandfor="add-wk-dialog" command="close" type="button" tabindex="4">Close</button>
-        <button onclick="sendWK()" tabindex="3">Submit</button>
+        <button onclick="sendAddWK()" tabindex="3">Submit</button>
     </div>
 </dialog>
 
 <dialog id="rm-wk-dialog" popover closedby="any">
     <p>Wettkampf entfernen: </p>
     <label for="wk-number">Nummer: </label>
-    <input type="number" name="wk-number" id="wk-number" placeholder="WK-Nummer" tabindex="1">
+    <input type="number" name="wk-number" id="wk-number-rm" placeholder="WK-Nummer" tabindex="1">
     <div class="control-buttons-in-dialog">
         <button commandfor="rm-wk-dialog" command="close" type="button" tabindex="4">Close</button>
-        <button onclick="sendWK()" tabindex="3">Submit</button>
+        <button onclick="sendRmWK()" tabindex="3">Submit</button>
     </div>
 </dialog>
 
