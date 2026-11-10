@@ -44,9 +44,8 @@ def update_checkbox(data):
         bool_value = 1
 
     # prevent sql-injection for collum
-    collum_Names = ["official", "printed", "certificate"]
-    if data['type'] not in collum_Names:
-        raise ValueError("Invalid collum")
+    if data['type'] not in db.column_Names:
+        raise ValueError("Invalid collum: " + str(data))
 
     con = db.get_db()
     try:
@@ -93,12 +92,21 @@ def emit_init(broadcast: bool = False):
     emit('init', query_db("SELECT * FROM event"), broadcast=broadcast)
 
 
-def query_db(query: str) -> list[dict[Any, Any]]:
+def query_db(query: str) -> dict[str, list[Any] | list[dict[Any, Any]]]:
+    '''
+    Returns "json" object
+    :param query:
+    :return:
+    Message: {"header" : header, "body" : body}
+        - header: (int , collum Name)
+        - body: {collum Name : value} for all columns
+    '''
     # source: https://stackoverflow.com/questions/3286525/return-sql-table-as-json-in-python
     cur = db.get_db().cursor()
     cur.execute(query)
-    r = [dict((cur.description[i][0], value) for i, value in enumerate(row)) for row in cur.fetchall()]
-    return r
+    sql_table_as_jason = [dict((cur.description[i][0], value) for i, value in enumerate(row)) for row in cur.fetchall()]
+    header = [cur.description[i][0] for i in range(len(cur.description))]
+    return {"header": header, "body": sql_table_as_jason}
 
 
 def execute_query_with_emit_init(query: str, var):

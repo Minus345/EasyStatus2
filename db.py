@@ -4,6 +4,7 @@ from datetime import datetime
 import click
 from flask import current_app, g
 
+column_Names = []
 
 def get_db():
     if 'db' not in g:
@@ -43,3 +44,11 @@ sqlite3.register_converter(
 def init_app(app):
     app.teardown_appcontext(close_db)
     app.cli.add_command(init_db_command)
+
+    # All column Names in on list
+    with app.app_context():
+        global column_Names
+        cur = get_db().cursor()
+        cur.execute("SELECT * FROM event")
+        cur.fetchone()
+        column_Names = [cur.description[i][0] for i in range(len(cur.description))]

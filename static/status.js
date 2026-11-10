@@ -10,20 +10,45 @@ socket.on("disconnect", () => {
 });
 
 socket.on('init', function (payload) {
-    const table = document.getElementById('table').getElementsByTagName('tbody')[0];
-    table.innerHTML = ""
-    payload.forEach(event => {
-        versions[event.number] = event.version
+    console.log(payload)
 
-        const row = table.insertRow()
-        const number = row.insertCell()
-        const name = row.insertCell()
-        number.textContent = event.number
-        name.textContent = event.name
+    //clear everything bevor
+    const table_head = document.getElementById('table').getElementsByTagName('thead')[0];
+    table_head.innerHTML = "";
+    const table_body = document.getElementById('table').getElementsByTagName('tbody')[0];
+    table_body.innerHTML = "";
 
-        valueNames = ["official", "printed"]
+    const header = payload.header;
+    const body = payload.body;
+    const static_cells = ["version", "number", "name"];
+
+    // create table head:
+    // static members:
+    const row_head = table_head.insertRow();
+    const number_head = row_head.insertCell();
+    number_head.textContent = "WK-Nummer";
+    const name_head = row_head.insertCell();
+    name_head.textContent = "Strecke";
+
+    // dynamic checkboxes
+    header.forEach(entry => {
+        if (static_cells.includes(entry)) return;
+        const cell_head = row_head.insertCell();
+        cell_head.textContent = entry;
+    })
+
+    // fill table body
+    body.forEach(event => {
+        versions[event.number] = event.version;
+
+        const row_body = table_body.insertRow();
+        const number = row_body.insertCell();
+        number.textContent = event.number;
+        const name = row_body.insertCell();
+
+        name.textContent = event.name;
         for (const key in event) {
-            if (!valueNames.includes(key)) continue
+            if (static_cells.includes(key)) continue
             const checkbox = document.createElement('input')
             checkbox.type = 'checkbox'
             checkbox.checked = event[key] === 1
@@ -36,7 +61,7 @@ socket.on('init', function (payload) {
                     "version": versions[event.number]
                 });
             }
-            const cell = row.insertCell()
+            const cell = row_body.insertCell()
             cell.appendChild(checkbox)
         }
     })
