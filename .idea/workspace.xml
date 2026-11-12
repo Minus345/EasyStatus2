@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76796d3e-453b-4927-a666-c8249b532285" name="Changes" comment="rewrite checkbox columns in (mostly) frontend to be more flexible">
+    <list default="true" id="76796d3e-453b-4927-a666-c8249b532285" name="Changes" comment="add icon">
+      <change afterPath="$PROJECT_DIR$/gunicorn.conf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/status.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/status.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/status.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/status.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="22" />
+    <option name="cachedIndexableFilesCount" value="26" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -59,61 +59,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0004462068001598" />
-      <entry key="MS500" value="1.2220422361670957" />
-      <entry key="S2" value="2.2214286830108962" />
-      <entry key="S5" value="3.862201595614243" />
-      <entry key="S10" value="5.407190175325182" />
-      <entry key="S30" value="8.562136574375765" />
-      <entry key="S60" value="11.728641933679404" />
-      <entry key="M2" value="18.345284097385182" />
-      <entry key="M5" value="47.422777612893235" />
-      <entry key="M10" value="92.03224504318989" />
-      <entry key="M15" value="125.03066213442396" />
-      <entry key="M30" value="209.82907855151555" />
-      <entry key="H1" value="383.66041119456503" />
-      <entry key="H2" value="673.8690719489704" />
-      <entry key="H4" value="1053.2413668071806" />
-      <entry key="D1" value="2022.0730417778022" />
-      <entry key="W1" value="2375.1268163303007" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000000000024" />
+      <entry key="S10" value="1.0000001004580505" />
+      <entry key="S30" value="1.034045049411712" />
+      <entry key="S60" value="2.1116143007056145" />
+      <entry key="M2" value="11.454040607085348" />
+      <entry key="M5" value="67.24005157540518" />
+      <entry key="M10" value="144.0706421387111" />
+      <entry key="M15" value="198.55052092111467" />
+      <entry key="M30" value="316.51210665624416" />
+      <entry key="H1" value="508.94144443326405" />
+      <entry key="H2" value="821.1814171434308" />
+      <entry key="H4" value="1234.782279930049" />
+      <entry key="D1" value="2288.720099023816" />
+      <entry key="W1" value="2675.3457958472954" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="4.030194646085937E-16" />
-      <entry key="MS500" value="8.339306333129307E-4" />
-      <entry key="S2" value="0.1887040935121994" />
-      <entry key="S5" value="0.6960696648807272" />
-      <entry key="S10" value="1.153440758080646" />
-      <entry key="S30" value="1.7659404805503787" />
-      <entry key="S60" value="2.2879552418166234" />
-      <entry key="M2" value="2.8882439637151256" />
-      <entry key="M5" value="3.931554917697978" />
-      <entry key="M10" value="6.012130168736891" />
-      <entry key="M15" value="8.446778945572404" />
-      <entry key="M30" value="17.78906236579173" />
-      <entry key="H1" value="40.187695437026086" />
-      <entry key="H2" value="77.85530947514103" />
-      <entry key="H4" value="129.32576219379297" />
-      <entry key="D1" value="267.09883928417867" />
-      <entry key="W1" value="317.2492999218558" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="8.769359607338889E-147" />
+      <entry key="S2" value="4.246039915400977E-37" />
+      <entry key="S5" value="4.18040717715049E-15" />
+      <entry key="S10" value="9.104984327685491E-8" />
+      <entry key="S30" value="0.007134547942210554" />
+      <entry key="S60" value="0.11943908756908399" />
+      <entry key="M2" value="0.4887398317947097" />
+      <entry key="M5" value="1.1536056980186862" />
+      <entry key="M10" value="1.8843170844889359" />
+      <entry key="M15" value="2.987099292484606" />
+      <entry key="M30" value="8.878642674138987" />
+      <entry key="H1" value="27.221978558379533" />
+      <entry key="H2" value="63.74381975399323" />
+      <entry key="H4" value="117.18949155516246" />
+      <entry key="D1" value="264.0001205141102" />
+      <entry key="W1" value="318.3771021443751" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.6511019350433748" />
-      <entry key="MS500" value="1.1310480125847986" />
-      <entry key="S2" value="2.178647589195348" />
-      <entry key="S5" value="4.264454854150389" />
-      <entry key="S10" value="6.3157969687519815" />
-      <entry key="S30" value="10.179817525443264" />
-      <entry key="S60" value="13.910291778289453" />
-      <entry key="M2" value="21.16349117695589" />
-      <entry key="M5" value="51.31522031384449" />
-      <entry key="M10" value="98.0124077381721" />
-      <entry key="M15" value="133.4476270256475" />
-      <entry key="M30" value="227.59109881375895" />
-      <entry key="H1" value="423.8206981517847" />
-      <entry key="H2" value="751.697385066839" />
-      <entry key="H4" value="1182.5438883946026" />
-      <entry key="D1" value="2289.163558092656" />
-      <entry key="W1" value="2692.374693473461" />
+      <entry key="MS100" value="7.0204746294012E-6" />
+      <entry key="MS500" value="0.09316939917493251" />
+      <entry key="S2" value="0.5524822423999558" />
+      <entry key="S5" value="0.7887281286624799" />
+      <entry key="S10" value="0.8881038497426595" />
+      <entry key="S30" value="1.0020727944883436" />
+      <entry key="S60" value="2.2087029929463946" />
+      <entry key="M2" value="11.927073625164605" />
+      <entry key="M5" value="68.38362700525968" />
+      <entry key="M10" value="145.94679836199055" />
+      <entry key="M15" value="201.52844965992503" />
+      <entry key="M30" value="325.3775628220806" />
+      <entry key="H1" value="536.1448672982464" />
+      <entry key="H2" value="884.9031485178295" />
+      <entry key="H4" value="1351.9507313780873" />
+      <entry key="D1" value="2552.711998756997" />
+      <entry key="W1" value="2993.7214710253074" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -149,7 +149,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -213,7 +213,7 @@
       <workItem from="1793804124454" duration="9758000" />
       <workItem from="1793884608107" duration="8630000" />
       <workItem from="1794330736860" duration="7153000" />
-      <workItem from="1794501666029" duration="4467000" />
+      <workItem from="1794501666029" duration="7010000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -287,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794336862276</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add icon">
+      <option name="closed" value="true" />
+      <created>1794506917326</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1794506917326</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,9 +322,10 @@
     <MESSAGE value="add rm-wk dialog frontend" />
     <MESSAGE value="add backend support for addWK and RmWK" />
     <MESSAGE value="rewrite checkbox columns in (mostly) frontend to be more flexible" />
-    <option name="LAST_COMMIT_MESSAGE" value="rewrite checkbox columns in (mostly) frontend to be more flexible" />
+    <MESSAGE value="add icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="add icon" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/EasyStatus2$EasyStatus2.coverage" NAME="EasyStatus2 Coverage Results" MODIFIED="1794506816216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EasyStatus2$EasyStatus2.coverage" NAME="EasyStatus2 Coverage Results" MODIFIED="1794509215369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
