@@ -1,5 +1,7 @@
 const socket = io();
-let versions = {}
+let versions = {};
+let notification_enabled = false;
+let notification_list = [];
 // online icon:
 socket.on("connect", () => {
     document.querySelector("#socket-status circle").setAttribute("fill", "green");
@@ -11,6 +13,14 @@ socket.on("disconnect", () => {
 
 socket.on('init', function (payload) {
     console.log(payload)
+
+    Notification.requestPermission((result) => {
+        if (result === "granted") {
+            notification_enabled = true;
+        } else {
+            notification_enabled = false;
+        }
+    });
 
     //clear everything bevor
     const table_head = document.getElementById('table').getElementsByTagName('thead')[0];
@@ -73,6 +83,9 @@ socket.on('update', function (payload) {
     versions[payload.number] = payload.version
     const checkbox = document.getElementById(payload.number + " " + payload.type);
     checkbox.checked = payload.value
+    if (notification_enabled && document.visibilityState === "hidden") {
+        sendNotification(payload.number, payload.type, payload.value);
+    }
 })
 
 socket.on('error', function (payload) {
@@ -118,3 +131,25 @@ function sendRmWK() {
     });
     dialog.close();
 }
+
+function sendNotification(number, key, value) {
+    const img = "/static/Icon.png";
+    let check_mark;
+    if (value) {
+        check_mark = "🗹 (erledigt)";
+    } else {
+        check_mark = "zurückgesetzt";
+    }
+    const text = `WK-Nummer: ${number} : ${key} jetzt ${check_mark}`;
+    const notification = new Notification("Easy Status", {body: text, icon: img});
+    notification_list.push(notification);
+}
+
+document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") {
+        // The tab has become visible so clear the now-stale Notification.
+        notification_list.forEach(elem => {
+            elem.close();
+        })
+    }
+});

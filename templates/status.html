@@ -4,16 +4,20 @@
         integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
         crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/static/status.css" type="text/css">
-<script src="/static/status.js"></script>
+<script src="/static/status.js" defer></script>
 <head>
     <meta charset="UTF-8">
     <title>Easy Status</title>
+    <link rel="icon" href="/static/Icon.png" sizes="128x128">
     <link rel="stylesheet" href="/static/status.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header>
-    <h1>Easy Status</h1>
+    <h1>
+        <img src="/static/Icon.png" alt="Icon" id="icon">
+        Easy Status
+    </h1>
     <div class="online-status">
         Connected:
         <svg id="socket-status" width="18" height="18" viewBox="0 0 24 24">
