@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76796d3e-453b-4927-a666-c8249b532285" name="Changes" comment="add icon">
-      <change afterPath="$PROJECT_DIR$/gunicorn.conf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="76796d3e-453b-4927-a666-c8249b532285" name="Changes" comment="add gunicorn.conf.py and requirements.txt">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/EasyStatus2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EasyStatus2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Icon/Icon.xcf" beforeDir="false" afterPath="$PROJECT_DIR$/Icon/Icon.xcf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gunicorn.conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/gunicorn.conf.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +19,6 @@
   </component>
   <component name="EmbeddingIndexingInfo">
     <option name="cachedIndexableFilesCount" value="26" />
-    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,61 +60,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000000000024" />
-      <entry key="S10" value="1.0000001004580505" />
-      <entry key="S30" value="1.034045049411712" />
-      <entry key="S60" value="2.1116143007056145" />
-      <entry key="M2" value="11.454040607085348" />
-      <entry key="M5" value="67.24005157540518" />
-      <entry key="M10" value="144.0706421387111" />
-      <entry key="M15" value="198.55052092111467" />
-      <entry key="M30" value="316.51210665624416" />
-      <entry key="H1" value="508.94144443326405" />
-      <entry key="H2" value="821.1814171434308" />
-      <entry key="H4" value="1234.782279930049" />
-      <entry key="D1" value="2288.720099023816" />
-      <entry key="W1" value="2675.3457958472954" />
+      <entry key="MS100" value="1.0008883362445467" />
+      <entry key="MS500" value="1.4222169972387222" />
+      <entry key="S2" value="3.04591672161979" />
+      <entry key="S5" value="6.184988198568486" />
+      <entry key="S10" value="9.542272278624598" />
+      <entry key="S30" value="14.498709000719954" />
+      <entry key="S60" value="17.773286714997287" />
+      <entry key="M2" value="30.37652626942187" />
+      <entry key="M5" value="78.574053458014" />
+      <entry key="M10" value="129.29370032962973" />
+      <entry key="M15" value="163.7788472286866" />
+      <entry key="M30" value="259.30341852048144" />
+      <entry key="H1" value="453.34047683909137" />
+      <entry key="H2" value="795.2968527981186" />
+      <entry key="H4" value="1269.9850907442192" />
+      <entry key="D1" value="2492.6246547928877" />
+      <entry key="W1" value="2947.4936810296904" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="8.769359607338889E-147" />
-      <entry key="S2" value="4.246039915400977E-37" />
-      <entry key="S5" value="4.18040717715049E-15" />
-      <entry key="S10" value="9.104984327685491E-8" />
-      <entry key="S30" value="0.007134547942210554" />
-      <entry key="S60" value="0.11943908756908399" />
-      <entry key="M2" value="0.4887398317947097" />
-      <entry key="M5" value="1.1536056980186862" />
-      <entry key="M10" value="1.8843170844889359" />
-      <entry key="M15" value="2.987099292484606" />
-      <entry key="M30" value="8.878642674138987" />
-      <entry key="H1" value="27.221978558379533" />
-      <entry key="H2" value="63.74381975399323" />
-      <entry key="H4" value="117.18949155516246" />
-      <entry key="D1" value="264.0001205141102" />
-      <entry key="W1" value="318.3771021443751" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="1.2496385781099159E-157" />
+      <entry key="S10" value="3.535022741242134E-79" />
+      <entry key="S30" value="7.070727018980743E-27" />
+      <entry key="S60" value="8.408761952945848E-14" />
+      <entry key="M2" value="2.900765557705363E-7" />
+      <entry key="M5" value="0.0026174820959546795" />
+      <entry key="M10" value="0.0780175338145506" />
+      <entry key="M15" value="0.3184732908371922" />
+      <entry key="M30" value="2.4023605384606785" />
+      <entry key="H1" value="13.160661401085095" />
+      <entry key="H2" value="43.824216837229145" />
+      <entry key="H4" value="97.30782206352528" />
+      <entry key="D1" value="257.741761211141" />
+      <entry key="W1" value="319.7603663890088" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="7.0204746294012E-6" />
-      <entry key="MS500" value="0.09316939917493251" />
-      <entry key="S2" value="0.5524822423999558" />
-      <entry key="S5" value="0.7887281286624799" />
-      <entry key="S10" value="0.8881038497426595" />
-      <entry key="S30" value="1.0020727944883436" />
-      <entry key="S60" value="2.2087029929463946" />
-      <entry key="M2" value="11.927073625164605" />
-      <entry key="M5" value="68.38362700525968" />
-      <entry key="M10" value="145.94679836199055" />
-      <entry key="M15" value="201.52844965992503" />
-      <entry key="M30" value="325.3775628220806" />
-      <entry key="H1" value="536.1448672982464" />
-      <entry key="H2" value="884.9031485178295" />
-      <entry key="H4" value="1351.9507313780873" />
-      <entry key="D1" value="2552.711998756997" />
-      <entry key="W1" value="2993.7214710253074" />
+      <entry key="MS100" value="0.9469085763665511" />
+      <entry key="MS500" value="1.40811601480817" />
+      <entry key="S2" value="3.0384906542331622" />
+      <entry key="S5" value="6.178084080529102" />
+      <entry key="S10" value="9.536723623611653" />
+      <entry key="S30" value="14.495866025896156" />
+      <entry key="S60" value="17.77157261646511" />
+      <entry key="M2" value="30.37529400493376" />
+      <entry key="M5" value="78.57567168362904" />
+      <entry key="M10" value="129.37043143068513" />
+      <entry key="M15" value="164.09540503809765" />
+      <entry key="M30" value="261.7014044641294" />
+      <entry key="H1" value="466.4915576079761" />
+      <entry key="H2" value="839.1055437373527" />
+      <entry key="H4" value="1367.2752767924082" />
+      <entry key="D1" value="2750.3583649262096" />
+      <entry key="W1" value="3267.2526107418894" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -125,39 +126,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Flask server.EasyStatus2.executor": "Run",
-    "JavaScript Debug.status.html.executor": "Run",
-    "JavaScript Debug.test.html.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "/home/max/PycharmProjects/EasyStatus2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flask server.EasyStatus2.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.status.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.test.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/max/PycharmProjects/EasyStatus2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
@@ -213,7 +214,8 @@
       <workItem from="1793804124454" duration="9758000" />
       <workItem from="1793884608107" duration="8630000" />
       <workItem from="1794330736860" duration="7153000" />
-      <workItem from="1794501666029" duration="7010000" />
+      <workItem from="1794501666029" duration="7335000" />
+      <workItem from="1794595587640" duration="3791000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -295,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794506917326</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add gunicorn.conf.py and requirements.txt">
+      <option name="closed" value="true" />
+      <created>1794509502382</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1794509502382</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +333,8 @@
     <MESSAGE value="add backend support for addWK and RmWK" />
     <MESSAGE value="rewrite checkbox columns in (mostly) frontend to be more flexible" />
     <MESSAGE value="add icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="add icon" />
+    <MESSAGE value="add gunicorn.conf.py and requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gunicorn.conf.py and requirements.txt" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EasyStatus2$EasyStatus2.coverage" NAME="EasyStatus2 Coverage Results" MODIFIED="1794509215369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

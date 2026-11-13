@@ -123,7 +123,7 @@ def execute_query_with_emit_init(query: str, var):
     emit_init(broadcast=True)
     db.close_db()
 
-app = create_app()
 
 if __name__ == '__main__':
+    app = create_app()
     socketio.run(app)
