@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76796d3e-453b-4927-a666-c8249b532285" name="Changes" comment="add gunicorn.conf.py and requirements.txt">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EasyStatus2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EasyStatus2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Icon/Icon.xcf" beforeDir="false" afterPath="$PROJECT_DIR$/Icon/Icon.xcf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gunicorn.conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/gunicorn.conf.py" afterDir="false" />
+    <list default="true" id="76796d3e-453b-4927-a666-c8249b532285" name="Changes" comment="little fixes with gunicorn">
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,61 +55,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0008883362445467" />
-      <entry key="MS500" value="1.4222169972387222" />
-      <entry key="S2" value="3.04591672161979" />
-      <entry key="S5" value="6.184988198568486" />
-      <entry key="S10" value="9.542272278624598" />
-      <entry key="S30" value="14.498709000719954" />
-      <entry key="S60" value="17.773286714997287" />
-      <entry key="M2" value="30.37652626942187" />
-      <entry key="M5" value="78.574053458014" />
-      <entry key="M10" value="129.29370032962973" />
-      <entry key="M15" value="163.7788472286866" />
-      <entry key="M30" value="259.30341852048144" />
-      <entry key="H1" value="453.34047683909137" />
-      <entry key="H2" value="795.2968527981186" />
-      <entry key="H4" value="1269.9850907442192" />
-      <entry key="D1" value="2492.6246547928877" />
-      <entry key="W1" value="2947.4936810296904" />
+      <entry key="MS100" value="1.0000000398733484" />
+      <entry key="MS500" value="1.033123524481165" />
+      <entry key="S2" value="1.4266130490560336" />
+      <entry key="S5" value="1.711235874415356" />
+      <entry key="S10" value="1.8433480150064714" />
+      <entry key="S30" value="1.9447908114986632" />
+      <entry key="S60" value="1.9737703545109087" />
+      <entry key="M2" value="2.297741388458979" />
+      <entry key="M5" value="14.546537250515877" />
+      <entry key="M10" value="54.16013859797224" />
+      <entry key="M15" value="92.0080941331947" />
+      <entry key="M30" value="195.31048688187047" />
+      <entry key="H1" value="394.19429448591734" />
+      <entry key="H2" value="742.5273197607912" />
+      <entry key="H4" value="1228.838957174768" />
+      <entry key="D1" value="2484.9896744282396" />
+      <entry key="W1" value="2953.676733601545" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="1.2496385781099159E-157" />
-      <entry key="S10" value="3.535022741242134E-79" />
-      <entry key="S30" value="7.070727018980743E-27" />
-      <entry key="S60" value="8.408761952945848E-14" />
-      <entry key="M2" value="2.900765557705363E-7" />
-      <entry key="M5" value="0.0026174820959546795" />
-      <entry key="M10" value="0.0780175338145506" />
-      <entry key="M15" value="0.3184732908371922" />
-      <entry key="M30" value="2.4023605384606785" />
-      <entry key="H1" value="13.160661401085095" />
-      <entry key="H2" value="43.824216837229145" />
-      <entry key="H4" value="97.30782206352528" />
-      <entry key="D1" value="257.741761211141" />
-      <entry key="W1" value="319.7603663890088" />
+      <entry key="S5" value="9.629385508435138E-208" />
+      <entry key="S10" value="3.103125119687419E-104" />
+      <entry key="S30" value="3.142435909752208E-35" />
+      <entry key="S60" value="5.605743695757035E-18" />
+      <entry key="M2" value="2.3684445405626744E-9" />
+      <entry key="M5" value="3.825286392188956E-4" />
+      <entry key="M10" value="0.029825129344219287" />
+      <entry key="M15" value="0.16775150589345922" />
+      <entry key="M30" value="1.743551948027229" />
+      <entry key="H1" value="11.211818758478808" />
+      <entry key="H2" value="40.44951700897837" />
+      <entry key="H4" value="93.48616415963747" />
+      <entry key="D1" value="256.0263844270516" />
+      <entry key="W1" value="319.45547621708556" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9469085763665511" />
-      <entry key="MS500" value="1.40811601480817" />
-      <entry key="S2" value="3.0384906542331622" />
-      <entry key="S5" value="6.178084080529102" />
-      <entry key="S10" value="9.536723623611653" />
-      <entry key="S30" value="14.495866025896156" />
-      <entry key="S60" value="17.77157261646511" />
-      <entry key="M2" value="30.37529400493376" />
-      <entry key="M5" value="78.57567168362904" />
-      <entry key="M10" value="129.37043143068513" />
-      <entry key="M15" value="164.09540503809765" />
-      <entry key="M30" value="261.7014044641294" />
-      <entry key="H1" value="466.4915576079761" />
-      <entry key="H2" value="839.1055437373527" />
-      <entry key="H4" value="1367.2752767924082" />
-      <entry key="D1" value="2750.3583649262096" />
-      <entry key="W1" value="3267.2526107418894" />
+      <entry key="MS100" value="0.9726549835981129" />
+      <entry key="MS500" value="1.0269570260224419" />
+      <entry key="S2" value="1.4231627893244487" />
+      <entry key="S5" value="1.709302473850755" />
+      <entry key="S10" value="1.8422528015054713" />
+      <entry key="S30" value="1.9443928346402903" />
+      <entry key="S60" value="1.9735628082505852" />
+      <entry key="M2" value="2.2974138806153213" />
+      <entry key="M5" value="14.545319164400167" />
+      <entry key="M10" value="54.18765373900281" />
+      <entry key="M15" value="92.17318704228462" />
+      <entry key="M30" value="197.04974045595552" />
+      <entry key="H1" value="405.39729560264465" />
+      <entry key="H2" value="782.9621522016123" />
+      <entry key="H4" value="1322.3079938381816" />
+      <entry key="D1" value="2741.008029668301" />
+      <entry key="W1" value="3273.1307699590852" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -215,7 +210,7 @@
       <workItem from="1793884608107" duration="8630000" />
       <workItem from="1794330736860" duration="7153000" />
       <workItem from="1794501666029" duration="7335000" />
-      <workItem from="1794595587640" duration="3791000" />
+      <workItem from="1794595587640" duration="4462000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -305,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794509502382</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="little fixes with gunicorn">
+      <option name="closed" value="true" />
+      <created>1794599742141</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1794599742141</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +337,8 @@
     <MESSAGE value="rewrite checkbox columns in (mostly) frontend to be more flexible" />
     <MESSAGE value="add icon" />
     <MESSAGE value="add gunicorn.conf.py and requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gunicorn.conf.py and requirements.txt" />
+    <MESSAGE value="little fixes with gunicorn" />
+    <option name="LAST_COMMIT_MESSAGE" value="little fixes with gunicorn" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EasyStatus2$EasyStatus2.coverage" NAME="EasyStatus2 Coverage Results" MODIFIED="1794509215369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
